@@ -1,21 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Collections.Specialized;
 using System.Diagnostics;
-using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
 using Diplom.BLEInteractions.Interfaces;
@@ -27,7 +18,6 @@ namespace Diplom.UserInteractions
     {
         private BaseBLEWatcher Watcher;
         private IBLEConnector Connector;
-
         bool isMap;
 
         private bool isDragging;
@@ -202,7 +192,6 @@ namespace Diplom.UserInteractions
             while (watch.ElapsedMilliseconds < Convert.ToInt32(Time.Text)*1000)
             { 
                 List<Task> tasks = new List<Task>();
-                string b = "";
                 for (int i = 0; i < ps.Length; i++)
                 {
                     int a = i;
@@ -228,12 +217,12 @@ namespace Diplom.UserInteractions
             {
                 item.values.RemoveAll(x => x == 0);
             }
+
             try
             {
                 ps.Where(z => z.values.Count>=8).ToList().ForEach(z => z.values.RemoveAll(x => x < z.values.Average() - 2 * Math.Sqrt(z.values.Sum(y => (double)(y - z.values.Average()) * (y - z.values.Average())) / z.values.Count) || x > z.values.Average() + 2 * Math.Sqrt(z.values.Sum(y => (double)(y - z.values.Average()) * (y - z.values.Average())) / z.values.Count)));
                 (double x, double y) point = PositionCalculator.LS(ps);
                 circle("a", (int)point.x, (int)point.y, 5, 5, RealCanvas);
-                File.AppendAllText(@"C:\Users\proto\Desktop\Main.txt", point.x +" "+point.y+"\n");
             }
             catch(Exception)
             {
