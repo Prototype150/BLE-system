@@ -1,0 +1,58 @@
+﻿<Window x:Class="Diplom.UserInteractions.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Diplom.UserInteractions"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="21*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="16*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="17*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="17*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="17*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="14*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="14*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="Text1" Grid.Column="3" Grid.Row="1" Grid.ColumnSpan="5" Text="Visible devices:" FontSize="30" TextAlignment="Center"/>
+        <TextBlock x:Name="Text2" Grid.Column="3" Grid.Row="5" Grid.ColumnSpan="6" Text="Connected devices:" FontSize="30" TextAlignment="Center"/>
+        <Button x:Name="StartButton" Grid.Column="1" Grid.Row="2" Content="Start Scanning" FontSize="20" Margin="13" Click="StartButton_Click"/>
+        <Button x:Name="StopButton" Grid.Column="1" Grid.Row="3" Content="Stop Scanning" FontSize ="20" Margin="13" Click="StopButton_Click"/>
+        <Button x:Name="Connect" Grid.Column="9" Grid.Row="2" Margin="13" Content="Connect To" Click="Connect_Click"/>
+        <Button x:Name="Disconnect" Grid.Column="9" Grid.Row="6" Margin="13" Content="Disconnect From" Click="Disconnect_Click"/>
+        <Button x:Name="ShowMap" Grid.Column="1" Grid.Row="6" Margin="13" Content="Show Map" Click="ShowMap_Click"/>
+        <Button x:Name="WriteToDevices" Grid.Column="1" Grid.Row="1" Margin="13" Content="Write To Devices" Visibility="Collapsed" Click="WriteToDevices_Click"/>
+        <Button x:Name="StartCalculation" Grid.Column="1" Grid.Row="7" Margin="14" Content="Find Device" Visibility="Collapsed" Click="StartCalculation_Click"/>
+        <Button x:Name="Clear" Grid.Column="9" Grid.Row="1" Margin="14" Content="Clear" Visibility="Collapsed" Click="Clear_Click" />
+        <TextBox x:Name="DeviceID_C" Grid.Row="3" Grid.Column="9" Margin="14"/>
+        <TextBox x:Name="DeviceID_D" Grid.Row="7" Grid.Column="9" Margin="14"/>
+        <TextBox x:Name="Time" Grid.Row="2" Grid.Column="9" Margin="14" Visibility="Collapsed"/>
+        <TextBox x:Name="ToWrite" Grid.Row="2" Grid.Column="1" Margin="14" Visibility="Collapsed"/>
+        <TextBox x:Name="Visible" Grid.Column="3" Grid.Row="2" Grid.ColumnSpan="5" Grid.RowSpan="2" IsReadOnly="True"/>
+        <TextBox x:Name="Connected" Grid.Column="3" Grid.Row="6" Grid.ColumnSpan="5" Grid.RowSpan="2" IsReadOnly="True"/>
+        <TextBox x:Name="UpdateTime" Grid.Column="1" Grid.Row="5" Margin="14" Visibility="Collapsed"/>
+        <Border x:Name="MyCanvas" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="7" BorderThickness="2" BorderBrush="Black" Background="LightGray" HorizontalAlignment="Left" VerticalAlignment="Top" Width="420" Height="340" Grid.RowSpan="7" Visibility="Collapsed">
+            <Canvas x:Name="RealCanvas">
+
+
+            </Canvas>
+        </Border>
+    </Grid>
+</Window>

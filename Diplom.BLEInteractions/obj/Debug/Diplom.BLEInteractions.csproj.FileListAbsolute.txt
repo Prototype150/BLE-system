@@ -1,0 +1,8 @@
+D:\C# Projects\Diplom\Diplom.BLEInteractions\obj\Debug\Diplom.BLEInteractions.csprojAssemblyReference.cache
+D:\C# Projects\Diplom\Diplom.BLEInteractions\obj\Debug\Diplom.BLEInteractions.csproj.CoreCompileInputs.cache
+D:\C# Projects\Diplom\Diplom.BLEInteractions\bin\Debug\Diplom.BLEInteractions.dll
+D:\C# Projects\Diplom\Diplom.BLEInteractions\bin\Debug\Diplom.BLEInteractions.pdb
+D:\C# Projects\Diplom\Diplom.BLEInteractions\bin\Debug\InTheHand.BluetoothLE.dll
+D:\C# Projects\Diplom\Diplom.BLEInteractions\obj\Debug\Diplom.BLEInteractions.csproj.CopyComplete
+D:\C# Projects\Diplom\Diplom.BLEInteractions\obj\Debug\Diplom.BLEInteractions.dll
+D:\C# Projects\Diplom\Diplom.BLEInteractions\obj\Debug\Diplom.BLEInteractions.pdb

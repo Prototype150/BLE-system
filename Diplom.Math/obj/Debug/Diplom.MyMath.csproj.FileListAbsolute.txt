@@ -1,0 +1,9 @@
+D:\C# Projects\Diplom\Diplom.Math\obj\Debug\Diplom.MyMath.csprojAssemblyReference.cache
+D:\C# Projects\Diplom\Diplom.Math\obj\Debug\Diplom.MyMath.csproj.CoreCompileInputs.cache
+D:\C# Projects\Diplom\Diplom.Math\bin\Debug\MathNet.Numerics.dll
+D:\C# Projects\Diplom\Diplom.Math\bin\Debug\MathNet.Numerics.xml
+D:\C# Projects\Diplom\Diplom.Math\obj\Debug\Diplom.MyMath.csproj.CopyComplete
+D:\C# Projects\Diplom\Diplom.Math\bin\Debug\Diplom.MyMath.dll
+D:\C# Projects\Diplom\Diplom.Math\bin\Debug\Diplom.MyMath.pdb
+D:\C# Projects\Diplom\Diplom.Math\obj\Debug\Diplom.MyMath.dll
+D:\C# Projects\Diplom\Diplom.Math\obj\Debug\Diplom.MyMath.pdb
